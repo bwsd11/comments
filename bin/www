@@ -1,0 +1,21 @@
+#!/usr/bin/nodejs
+var debug = require('debug')('my-application');
+var app = require('../app');
+
+var db = require('../config/db');
+
+var mongoose = require('mongoose');
+
+mongoose.connect(db.url);
+var db = mongoose.connection;
+
+app.set('port', process.env.PORT || 3000);
+
+
+var server = app.listen(app.get('port'), function () {
+    debug('Express server listening on port ' + server.address().port);
+});
+
+
+
+

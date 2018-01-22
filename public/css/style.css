@@ -1,0 +1,59 @@
+body {
+  padding: 50px;
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#comments h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+#comments ul {
+  margin: 0;
+  padding: 0;
+}
+#comments ul li {
+  position: relative;
+  list-style: none;
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 20px 20px 5px;
+  margin-bottom: 20px;
+}
+#comments ul li p {}
+#comments ul li p.date {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+#comments ul li p.title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#comments .addcomment {
+  font-size: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+  margin-top: 30px;
+}
+
+#comments form#send {
+  margin-top: 30px;
+  display: none;
+}
+
+#comments form#send label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#comments form#send input  {
+  margin-bottom: 15px;
+}
