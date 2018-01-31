@@ -25,26 +25,6 @@ var com = {
 }
 
 
-console.log(conform.validate(com, {
-    properties: {
-        name: {
-            type: 'string',
-            required: true,
-            minLength: 10,
-            pattern: /^[a-z]+$/,
-            messages: {
-                type: 'Должны быть только буквы',
-                required: 'Имя - обязательное поле',
-                minLength: 'Минимальное количество символов - 10',
-                pattern: 'Должны быть только английские символы',
-
-
-            }
-        }
-
-    }
-}))
-
 
 
 
@@ -98,17 +78,39 @@ router.post('/add', function (req, res) {
     }
 
 
-    db.collection('comments1').insert(comment, function (err, res) {
-        if (err)
-            console.log(err);
+    console.log(conform.validate(comment, {
+        properties: {
+            name: {
+                type: 'string',
+                required: true,
+                minLength: 10,
+                pattern: /^[a-z]+$/,
+                messages: {
+                    type: 'Должны быть только буквы',
+                    required: 'Имя - обязательное поле',
+                    minLength: 'Минимальное количество символов - 10',
+                    pattern: 'Должны быть только английские символы',
 
-    })
-    db.collection('comments').find().toArray(function (err, docs) {
-        if (err)
-            console.log(err);
-        console.log(docs);
-        res.render('index', {title: title, comments: docs});
-    })
+
+                }
+            }
+
+        }
+    }))
+
+
+
+    // db.collection('comments1').insert(comment, function (err, res) {
+    //     if (err)
+    //         console.log(err);
+    //
+    // })
+    // db.collection('comments').find().toArray(function (err, docs) {
+    //     if (err)
+    //         console.log(err);
+    //     console.log(docs);
+    //     res.render('index', {title: title, comments: docs});
+    // })
 })
 
 module.exports = router;
