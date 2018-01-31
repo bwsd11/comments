@@ -43,7 +43,7 @@ console.log(conform.validate(com, {
     }
 }))
 
-asd 
+
 
 
 router.get('/', function (req, res) {
