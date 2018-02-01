@@ -28,8 +28,8 @@ define(function(require) {
     var Comment = Backbone.Model.extend({
         defaults: {
             name: 'Dima',
-            subject: 'web',
-            message: 'i\'m a web developer'
+            title: 'web',
+            text: 'i\'m a web developer'
         },
     });
 

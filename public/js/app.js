@@ -38,6 +38,10 @@ require(["jquery", "collections/CommentCollection", "models/comment", "views/Com
 
 
 
+        console.log(CommentCollection);
+
+
+
 
 
         var commentsView = new commentsview({collection: CommentCollection});

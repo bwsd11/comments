@@ -29,16 +29,13 @@ define(function (require) {
         tagName: 'ul',
 
         initialize: function () {
-            // console.log(this);
+
         },
 
         render: function () {
 
-
-            this.collection.each(function (comment) {
-                console.log(this);
-                console.log(comment);
-                var commentView = new Commentview({model: comment});
+            this.collection.each(function (val) {
+                var commentView = new Commentview({model: val});
                 this.$el.append(commentView.render().el);
             }, this);
 

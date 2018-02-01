@@ -44,9 +44,8 @@ router.get('/get', function (req, res) {
             v.date = moment(v.date).startOf('hour').fromNow();
         })
 
-        return docs;
 
-        // res.send(docs);
+        res.send(docs);
         // res.render('index', {title: title, comments: docs});
     })
 

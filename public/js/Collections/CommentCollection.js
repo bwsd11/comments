@@ -32,12 +32,8 @@ define(function (require) {
         url: '/get'
     });
 
-    var col = new CommentsCollection({
-        name: 'asd'
-    });
+    var col = new CommentsCollection();
     col.fetch();
-
-    console.log(col);
 
 
     return col;
