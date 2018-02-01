@@ -32,13 +32,13 @@ require(["jquery", "collections/CommentCollection", "models/comment", "views/Com
             }
         ]);
 
-        var CommentsView = new commentsview({collection: CommentCollection});
-        $(document.body).append(CommentsView.render().el);
+        var commentsView = new commentsview({collection: commentcollection});
+        $(document.body).append(commentsView.render().el);
 
-        console.log(commentcollection);
-
-        var Comment1 = new modelcomment();
-
-        console.log(Comment1.attributes);
+        // console.log(commentcollection);
+        //
+        // var Comment1 = new modelcomment();
+        //
+        // console.log(Comment1.attributes);
     });
 });

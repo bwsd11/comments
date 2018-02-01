@@ -23,7 +23,8 @@ define(function (require) {
     var $ = require('jquery'),
         _ = require('underscore'),
         Backbone = require('backbone'),
-        Comment = require('models/comment');
+        Commentmodel = require('models/comment'),
+        Commentview = require('views/comment');
 
     var CommentsView = Backbone.View.extend({
         tagName: 'ul',
@@ -33,9 +34,10 @@ define(function (require) {
         },
 
         render: function () {
-            this.collection.each(function (person) {
-                var personView = new PersonView({model: person});
-                this.$el.append(personView.render().el);
+
+            this.collection.each(function (comment) {
+                var commentView = new Commentview({model: comment});
+                this.$el.append(commentView.render().el);
             }, this);
 
             return this;
