@@ -45,7 +45,7 @@ router.get('/', function (req, res) {
         })
 
 
-        res.render('index', {title: title, comments: docs});
+        res.render('/index.html', {title: title, comments: docs});
     })
 
 });

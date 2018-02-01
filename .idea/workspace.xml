@@ -2,7 +2,138 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d7f3f04-c003-4745-b22f-3d98f2e93544" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/Collections/CommentCollection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/Controllers/backbone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/Models/comment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/Views/CommentsView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/Views/comment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/lib/backbone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/lib/jquery-3.3.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/lib/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/lib/underscore.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/moment.js" afterPath="$PROJECT_DIR$/public/js/lib/moment.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/af.js" afterPath="$PROJECT_DIR$/public/js/locale/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ar-dz.js" afterPath="$PROJECT_DIR$/public/js/locale/ar-dz.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ar-kw.js" afterPath="$PROJECT_DIR$/public/js/locale/ar-kw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ar-ly.js" afterPath="$PROJECT_DIR$/public/js/locale/ar-ly.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ar-ma.js" afterPath="$PROJECT_DIR$/public/js/locale/ar-ma.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ar-sa.js" afterPath="$PROJECT_DIR$/public/js/locale/ar-sa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ar-tn.js" afterPath="$PROJECT_DIR$/public/js/locale/ar-tn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ar.js" afterPath="$PROJECT_DIR$/public/js/locale/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/az.js" afterPath="$PROJECT_DIR$/public/js/locale/az.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/be.js" afterPath="$PROJECT_DIR$/public/js/locale/be.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/bg.js" afterPath="$PROJECT_DIR$/public/js/locale/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/bm.js" afterPath="$PROJECT_DIR$/public/js/locale/bm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/bn.js" afterPath="$PROJECT_DIR$/public/js/locale/bn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/bo.js" afterPath="$PROJECT_DIR$/public/js/locale/bo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/br.js" afterPath="$PROJECT_DIR$/public/js/locale/br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/bs.js" afterPath="$PROJECT_DIR$/public/js/locale/bs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ca.js" afterPath="$PROJECT_DIR$/public/js/locale/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/cs.js" afterPath="$PROJECT_DIR$/public/js/locale/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/cv.js" afterPath="$PROJECT_DIR$/public/js/locale/cv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/cy.js" afterPath="$PROJECT_DIR$/public/js/locale/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/da.js" afterPath="$PROJECT_DIR$/public/js/locale/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/de-at.js" afterPath="$PROJECT_DIR$/public/js/locale/de-at.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/de-ch.js" afterPath="$PROJECT_DIR$/public/js/locale/de-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/de.js" afterPath="$PROJECT_DIR$/public/js/locale/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/dv.js" afterPath="$PROJECT_DIR$/public/js/locale/dv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/el.js" afterPath="$PROJECT_DIR$/public/js/locale/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/en-au.js" afterPath="$PROJECT_DIR$/public/js/locale/en-au.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/en-ca.js" afterPath="$PROJECT_DIR$/public/js/locale/en-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/en-gb.js" afterPath="$PROJECT_DIR$/public/js/locale/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/en-ie.js" afterPath="$PROJECT_DIR$/public/js/locale/en-ie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/en-nz.js" afterPath="$PROJECT_DIR$/public/js/locale/en-nz.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/eo.js" afterPath="$PROJECT_DIR$/public/js/locale/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/es-do.js" afterPath="$PROJECT_DIR$/public/js/locale/es-do.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/es-us.js" afterPath="$PROJECT_DIR$/public/js/locale/es-us.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/es.js" afterPath="$PROJECT_DIR$/public/js/locale/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/et.js" afterPath="$PROJECT_DIR$/public/js/locale/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/eu.js" afterPath="$PROJECT_DIR$/public/js/locale/eu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/fa.js" afterPath="$PROJECT_DIR$/public/js/locale/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/fi.js" afterPath="$PROJECT_DIR$/public/js/locale/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/fo.js" afterPath="$PROJECT_DIR$/public/js/locale/fo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/fr-ca.js" afterPath="$PROJECT_DIR$/public/js/locale/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/fr-ch.js" afterPath="$PROJECT_DIR$/public/js/locale/fr-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/fr.js" afterPath="$PROJECT_DIR$/public/js/locale/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/fy.js" afterPath="$PROJECT_DIR$/public/js/locale/fy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/gd.js" afterPath="$PROJECT_DIR$/public/js/locale/gd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/gl.js" afterPath="$PROJECT_DIR$/public/js/locale/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/gom-latn.js" afterPath="$PROJECT_DIR$/public/js/locale/gom-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/gu.js" afterPath="$PROJECT_DIR$/public/js/locale/gu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/he.js" afterPath="$PROJECT_DIR$/public/js/locale/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/hi.js" afterPath="$PROJECT_DIR$/public/js/locale/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/hr.js" afterPath="$PROJECT_DIR$/public/js/locale/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/hu.js" afterPath="$PROJECT_DIR$/public/js/locale/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/hy-am.js" afterPath="$PROJECT_DIR$/public/js/locale/hy-am.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/id.js" afterPath="$PROJECT_DIR$/public/js/locale/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/is.js" afterPath="$PROJECT_DIR$/public/js/locale/is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/it.js" afterPath="$PROJECT_DIR$/public/js/locale/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ja.js" afterPath="$PROJECT_DIR$/public/js/locale/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/jv.js" afterPath="$PROJECT_DIR$/public/js/locale/jv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ka.js" afterPath="$PROJECT_DIR$/public/js/locale/ka.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/kk.js" afterPath="$PROJECT_DIR$/public/js/locale/kk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/km.js" afterPath="$PROJECT_DIR$/public/js/locale/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/kn.js" afterPath="$PROJECT_DIR$/public/js/locale/kn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ko.js" afterPath="$PROJECT_DIR$/public/js/locale/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ky.js" afterPath="$PROJECT_DIR$/public/js/locale/ky.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/lb.js" afterPath="$PROJECT_DIR$/public/js/locale/lb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/lo.js" afterPath="$PROJECT_DIR$/public/js/locale/lo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/lt.js" afterPath="$PROJECT_DIR$/public/js/locale/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/lv.js" afterPath="$PROJECT_DIR$/public/js/locale/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/me.js" afterPath="$PROJECT_DIR$/public/js/locale/me.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/mi.js" afterPath="$PROJECT_DIR$/public/js/locale/mi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/mk.js" afterPath="$PROJECT_DIR$/public/js/locale/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ml.js" afterPath="$PROJECT_DIR$/public/js/locale/ml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/mr.js" afterPath="$PROJECT_DIR$/public/js/locale/mr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ms-my.js" afterPath="$PROJECT_DIR$/public/js/locale/ms-my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ms.js" afterPath="$PROJECT_DIR$/public/js/locale/ms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/mt.js" afterPath="$PROJECT_DIR$/public/js/locale/mt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/my.js" afterPath="$PROJECT_DIR$/public/js/locale/my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/nb.js" afterPath="$PROJECT_DIR$/public/js/locale/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ne.js" afterPath="$PROJECT_DIR$/public/js/locale/ne.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/nl-be.js" afterPath="$PROJECT_DIR$/public/js/locale/nl-be.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/nl.js" afterPath="$PROJECT_DIR$/public/js/locale/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/nn.js" afterPath="$PROJECT_DIR$/public/js/locale/nn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/pa-in.js" afterPath="$PROJECT_DIR$/public/js/locale/pa-in.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/pl.js" afterPath="$PROJECT_DIR$/public/js/locale/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/pt-br.js" afterPath="$PROJECT_DIR$/public/js/locale/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/pt.js" afterPath="$PROJECT_DIR$/public/js/locale/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ro.js" afterPath="$PROJECT_DIR$/public/js/locale/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ru.js" afterPath="$PROJECT_DIR$/public/js/locale/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/sd.js" afterPath="$PROJECT_DIR$/public/js/locale/sd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/se.js" afterPath="$PROJECT_DIR$/public/js/locale/se.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/si.js" afterPath="$PROJECT_DIR$/public/js/locale/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/sk.js" afterPath="$PROJECT_DIR$/public/js/locale/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/sl.js" afterPath="$PROJECT_DIR$/public/js/locale/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/sq.js" afterPath="$PROJECT_DIR$/public/js/locale/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/sr-cyrl.js" afterPath="$PROJECT_DIR$/public/js/locale/sr-cyrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/sr.js" afterPath="$PROJECT_DIR$/public/js/locale/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ss.js" afterPath="$PROJECT_DIR$/public/js/locale/ss.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/sv.js" afterPath="$PROJECT_DIR$/public/js/locale/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/sw.js" afterPath="$PROJECT_DIR$/public/js/locale/sw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ta.js" afterPath="$PROJECT_DIR$/public/js/locale/ta.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/te.js" afterPath="$PROJECT_DIR$/public/js/locale/te.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/tet.js" afterPath="$PROJECT_DIR$/public/js/locale/tet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/th.js" afterPath="$PROJECT_DIR$/public/js/locale/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/tl-ph.js" afterPath="$PROJECT_DIR$/public/js/locale/tl-ph.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/tlh.js" afterPath="$PROJECT_DIR$/public/js/locale/tlh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/tr.js" afterPath="$PROJECT_DIR$/public/js/locale/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/tzl.js" afterPath="$PROJECT_DIR$/public/js/locale/tzl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/tzm-latn.js" afterPath="$PROJECT_DIR$/public/js/locale/tzm-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/tzm.js" afterPath="$PROJECT_DIR$/public/js/locale/tzm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/uk.js" afterPath="$PROJECT_DIR$/public/js/locale/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/ur.js" afterPath="$PROJECT_DIR$/public/js/locale/ur.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/uz-latn.js" afterPath="$PROJECT_DIR$/public/js/locale/uz-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/uz.js" afterPath="$PROJECT_DIR$/public/js/locale/uz.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/vi.js" afterPath="$PROJECT_DIR$/public/js/locale/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/x-pseudo.js" afterPath="$PROJECT_DIR$/public/js/locale/x-pseudo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/yo.js" afterPath="$PROJECT_DIR$/public/js/locale/yo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/zh-cn.js" afterPath="$PROJECT_DIR$/public/js/locale/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/zh-hk.js" afterPath="$PROJECT_DIR$/public/js/locale/zh-hk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locale/zh-tw.js" afterPath="$PROJECT_DIR$/public/js/locale/zh-tw.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +145,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="98" column="7" lean-forward="true" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+            <state relative-caret-position="0">
+              <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/Views/comment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentCollection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/Collections/CommentCollection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentsView.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/Views/CommentsView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/Models/comment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -27,14 +218,22 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -58,6 +257,17 @@
         <option value="$PROJECT_DIR$/app/routes/index.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/public/js/config.js" />
+        <option value="$PROJECT_DIR$/public/js/lib/backbone.js" />
+        <option value="$PROJECT_DIR$/public/js/lib/underscore.js" />
+        <option value="$PROJECT_DIR$/public/js/Controller/backbone.js" />
+        <option value="$PROJECT_DIR$/public/js/Controllers/backbone.js" />
+        <option value="$PROJECT_DIR$/public/js/Models/comment.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/js/Collections/CommentCollection.js" />
+        <option value="$PROJECT_DIR$/public/js/Views/CommentsView.js" />
+        <option value="$PROJECT_DIR$/public/js/Views/comment.js" />
+        <option value="$PROJECT_DIR$/public/js/app.js" />
       </list>
     </option>
   </component>
@@ -71,7 +281,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -92,8 +302,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -104,12 +312,58 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Collections" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Models" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -117,9 +371,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\test\public\js\lib" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\test\public\js\lib" />
+      <recent name="C:\xampp\htdocs\test\public\js" />
       <recent name="C:\xampp\htdocs\test\app\views" />
     </key>
   </component>
@@ -156,17 +416,19 @@
       <workItem from="1517395117287" duration="932000" />
       <workItem from="1517406156511" duration="139000" />
       <workItem from="1517406811789" duration="50000" />
+      <workItem from="1517485950535" duration="5207000" />
+      <workItem from="1517493333612" duration="2322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17552000" />
+    <option name="totallyTimeSpent" value="25081000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -182,7 +444,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -199,6 +461,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.js" />
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -207,30 +470,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js" />
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -264,7 +504,6 @@
     <entry file="file://$PROJECT_DIR$/app/app.js" />
     <entry file="file://$PROJECT_DIR$/app/routes/index.js" />
     <entry file="file://$PROJECT_DIR$/app/views/add.ejs" />
-    <entry file="file://$PROJECT_DIR$/views/index.ejs" />
     <entry file="file://$PROJECT_DIR$/bin/www" />
     <entry file="file://$PROJECT_DIR$/package.json" />
     <entry file="file://$PROJECT_DIR$/app/package.json" />
@@ -273,18 +512,111 @@
     <entry file="file://$PROJECT_DIR$/app/views/index.ejs" />
     <entry file="file://$PROJECT_DIR$/app/public/js/js.js" />
     <entry file="file://$PROJECT_DIR$/app/routes/index.js" />
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/public/js/lib/require.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="98" column="7" lean-forward="true" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/lib/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/lib/backbone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/lib/underscore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/Controllers/backbone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/Models/comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/Collections/CommentCollection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/Views/comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/Views/CommentsView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
           <folding />
         </state>
       </provider>
