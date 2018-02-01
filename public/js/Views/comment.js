@@ -28,18 +28,21 @@ define(function (require) {
     var PersonView = Backbone.View.extend({
         tagName: 'li',
 
-        template: "#comment",
+        template: "#comments_t",
 
         initialize: function () {
             this.render();
         },
 
         render: function () {
-            this.$el.html( this.template( this.model.toJSON() ) );
+            var template = _.template( $(this.template).html() );
+            this.$el.html(template( this.model.toJSON() ));
 
             return this;
         }
     });
+
+    return PersonView;
 
 })
 

@@ -20,25 +20,29 @@ requirejs.config({
 });
 
 
-require(["jquery", "collections/CommentCollection", "models/comment", "views/CommentsView"], function ($, CommentCollection, modelcomment, commentsview) {
+require(["jquery", "collections/CommentCollection", "models/comment", "views/CommentsView"],
+    function ($, CommentCollection, modelcomment, commentsview) {
     $(document).ready(function () {
 
-
-        var commentcollection = new CommentCollection([
-            {
-                name: "asd",
-                subject: 'sub',
-                message: "i'm a web programmer"
-            }
-        ]);
-
-        var commentsView = new commentsview({collection: commentcollection});
-        $(document.body).append(commentsView.render().el);
-
-        // console.log(commentcollection);
         //
-        // var Comment1 = new modelcomment();
+        // var commentcollection = new CommentCollection([
+        //     {
+        //         name: "asd",
+        //         subject: 'sub',
+        //         message: "i'm a web programmer"
+        //     }
+        // ]);
         //
-        // console.log(Comment1.attributes);
+        // var comments = new CommentCollection();
+        // comments.fetch();
+
+
+
+
+
+        var commentsView = new commentsview({collection: CommentCollection});
+        $("#comments .comments").append(commentsView.render().el);
+
+
     });
 });

@@ -28,24 +28,26 @@ var com = {
 
 
 
-router.get('/', function (req, res) {
+router.get('/get', function (req, res) {
+
+    console.log('234534252435234523453245345');
+
     db.collection('comments').find().toArray(function (err, docs) {
         if (err)
             console.log(err);
 
         console.log(docs);
-        // var now = moment('2018-01-22T01:00:00+03:00');
         moment.lang('ru');
 
-        // var date = moment(now).startOf('hour').fromNow();
 
         docs.forEach(function (v) {
             v.date = moment(v.date).startOf('hour').fromNow();
-            console.log(v.date);
         })
 
+        return docs;
 
-        res.render('/index.html', {title: title, comments: docs});
+        // res.send(docs);
+        // res.render('index', {title: title, comments: docs});
     })
 
 });

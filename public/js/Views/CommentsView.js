@@ -23,19 +23,21 @@ define(function (require) {
     var $ = require('jquery'),
         _ = require('underscore'),
         Backbone = require('backbone'),
-        Commentmodel = require('models/comment'),
         Commentview = require('views/comment');
 
     var CommentsView = Backbone.View.extend({
         tagName: 'ul',
 
         initialize: function () {
-
+            // console.log(this);
         },
 
         render: function () {
 
+
             this.collection.each(function (comment) {
+                console.log(this);
+                console.log(comment);
                 var commentView = new Commentview({model: comment});
                 this.$el.append(commentView.render().el);
             }, this);

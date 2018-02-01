@@ -3,15 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
-<p>asdasd</p>
 
-<script id="comments" type="text/template">
-    <strong><%= name %></strong> (<%= age %>) - <%= occupation %>
+<script id="comments_t" type="text/template">
+
+    <p class="title">Имя:</p>
+    <p><%= name %></p>
+
+    <p class="title">Тема:</p>
+    <p><%= subject %></p>
+
+    <p class="title">Комментарий</p>
+    <p><%= message %></p>
 </script>
 
 <script data-main="/js/app.js" src="/js/lib/require.js"></script>
+
+
+
+<div id="comments" class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <h1><%= title %></h1>
+
+
+            <div class="comments">
+
+            </div>
+
+
+
+
+            <a class="addcomment" onclick="addComment(this)">Добавить новый комментарий</a>
+
+            <form id="send" class="form-horizontal" method="post" action="/add">
+                <div class="control-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="control-group">
+                    <label for="title">Тема:</label>
+                    <input type="text" name="title" id="title">
+                </div>
+
+                <div class="control-group">
+                    <label for="comment">Комментарий</label>
+                    <input type="text" name="comment" id="comment">
+                </div>
+
+
+                <input class="btn btn-primary" type="submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 </body>
 </html>

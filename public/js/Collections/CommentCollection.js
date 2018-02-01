@@ -28,10 +28,17 @@ define(function (require) {
         Comment = require('models/comment');
 
     var CommentsCollection = Backbone.Collection.extend({
-        model: Comment
+        model: Comment,
+        url: '/get'
     });
 
+    var col = new CommentsCollection({
+        name: 'asd'
+    });
+    col.fetch();
+
+    console.log(col);
 
 
-    return CommentsCollection;
+    return col;
 })
