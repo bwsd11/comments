@@ -42,7 +42,7 @@ router.get('/comments', function (req, res) {
         })
 
 
-        res.send(com);
+        res.send(docs);
         // res.render('index', {title: title, comments: docs});
     })
 
