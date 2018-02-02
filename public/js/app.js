@@ -20,21 +20,13 @@ requirejs.config({
 });
 
 
-require(["jquery", "collections/CommentCollection", "models/comment", "views/CommentsView"],
-    function ($, CommentCollection, modelcomment, commentsview) {
+require(["jquery", "collections/CommentCollection", "models/comment", "views/CommentsView", "backbone"],
+    function ($, CommentCollection, modelcomment, commentsview, backbone) {
     $(document).ready(function () {
 
         //
-        // var commentcollection = new CommentCollection([
-        //     {
-        //         name: "asd",
-        //         subject: 'sub',
-        //         message: "i'm a web programmer"
-        //     }
-        // ]);
-        //
-        // var comments = new CommentCollection();
-        // comments.fetch();
+        // var commentcollection = new CommentCollection();
+        // commentcollection.fetch();
 
 
 

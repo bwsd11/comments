@@ -27,14 +27,16 @@ define(function (require) {
         Backbone = require('backbone'),
         Comment = require('models/comment');
 
+
     var CommentsCollection = Backbone.Collection.extend({
         model: Comment,
-        url: '/get'
+        url: '/comments'
     });
 
-    var col = new CommentsCollection();
-    col.fetch();
+
+    var coll = new CommentsCollection({});
+    coll.fetch();
 
 
-    return col;
+    return coll;
 })

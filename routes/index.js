@@ -6,7 +6,6 @@ var conform = require('conform');
 var db = require('../config/db');
 
 
-
 var mongoose = require('mongoose');
 
 mongoose.connect(db.url);
@@ -18,17 +17,15 @@ var objectId = require('mongodb').ObjectId;
 var title = 'Комментарии';
 
 
-var com = {
-    name: 'sdmwasdfsdfdf',
-    sub: 'subject',
-    comment: 'комментарий comment'
-}
+var com = [
+    {
+        name: 'sdmwasdfsdfdf',
+        title: 'subject',
+        text: 'комментарий comment'
+    }]
 
 
-
-
-
-router.get('/get', function (req, res) {
+router.get('/comments', function (req, res) {
 
     console.log('234534252435234523453245345');
 
@@ -45,7 +42,7 @@ router.get('/get', function (req, res) {
         })
 
 
-        res.send(docs);
+        res.send(com);
         // res.render('index', {title: title, comments: docs});
     })
 
@@ -98,7 +95,6 @@ router.post('/add', function (req, res) {
 
         }
     }))
-
 
 
     // db.collection('comments1').insert(comment, function (err, res) {
