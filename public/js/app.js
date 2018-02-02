@@ -24,9 +24,9 @@ require(["jquery", "collections/CommentCollection", "models/comment", "views/Com
     function ($, CommentCollection, modelcomment, commentsview, backbone) {
     $(document).ready(function () {
 
-        //
-        // var commentcollection = new CommentCollection();
-        // commentcollection.fetch();
+
+        var commentcollection = new CommentCollection();
+        commentcollection.fetch();
 
 
 
@@ -36,7 +36,7 @@ require(["jquery", "collections/CommentCollection", "models/comment", "views/Com
 
 
 
-        var commentsView = new commentsview({collection: CommentCollection});
+        var commentsView = new commentsview({collection: commentcollection});
         $("#comments .comments").append(commentsView.render().el);
 
 

@@ -34,9 +34,8 @@ define(function (require) {
     });
 
 
-    var coll = new CommentsCollection({});
-    coll.fetch();
 
 
-    return coll;
+
+    return CommentsCollection;
 })
