@@ -1,5 +1,3 @@
-
-
 define(function (require) {
     var $ = require('jquery'),
         _ = require('underscore'),
@@ -12,6 +10,14 @@ define(function (require) {
         initialize: function () {
             console.log(this);
 
+            this.collection.on('add', this.addOne, this);
+
+        },
+
+        addOne: function (model) {
+            var commentView = new Commentview({model: model});
+            this.$el.append(commentView.render().el);
+            // model.save();
         },
 
         render: function () {

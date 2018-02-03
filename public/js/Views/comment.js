@@ -5,7 +5,7 @@ define(function (require) {
 
     var CommentView = Backbone.View.extend({
         tagName: 'li',
-
+        url: '/comment',
         template: "#comments_t",
 
         initialize: function () {
@@ -18,6 +18,7 @@ define(function (require) {
 
             return this;
         }
+
     });
 
 

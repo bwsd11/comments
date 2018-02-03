@@ -24,6 +24,6 @@ requirejs.config({
 require(["controllers/CommentsController"],
     function (CommentsController) {
 
-    CommentsController.start();
+    new CommentsController();
 
     });

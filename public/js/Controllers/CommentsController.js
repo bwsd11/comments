@@ -3,25 +3,37 @@ define(function (require) {
         _ = require('underscore'),
         Backbone = require('backbone'),
         Commentsview = require('views/CommentsView'),
-        CommentsCollection = require('collections/CommentCollection');
+        CommentsCollection = require('collections/CommentCollection'),
+        CommentFormView = require('views/commentform');
 
 
     var CommentsController = Backbone.Router.extend({
 
-        start: function () {
-            var commentsCollections = new CommentsCollection({});
+        initialize: function () {
+            var commentsCollections = new CommentsCollection();
+
             commentsCollections.fetch();
 
-            console.log(commentsCollections);
+            var commentform = new CommentFormView({collection: commentsCollections});
 
             var commentsView = new Commentsview({collection: commentsCollections});
             $("#comments .comments").append(commentsView.render().el);
+
+            // commentsCollections.on('add', commentsCollections.save());
+
+
+        },
+
+        start: function () {
+
+
+
         }
 
     });
 
-    var commentsController = new CommentsController();
 
 
-    return commentsController;
+
+    return CommentsController;
 })
