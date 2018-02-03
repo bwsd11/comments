@@ -26,13 +26,4 @@ require(["controllers/CommentsController"],
 
     CommentsController.start();
 
-        // var commentcollection = new CommentCollection();
-        // commentcollection.fetch();
-        //
-        // console.log(CommentCollection);
-        //
-        // var commentsView = new commentsview({collection: commentcollection});
-        // $("#comments .comments").append(commentsView.render().el);
-
-
     });

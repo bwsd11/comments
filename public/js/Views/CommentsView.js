@@ -10,7 +10,7 @@ define(function (require) {
         tagName: 'ul',
 
         initialize: function () {
-            console.log(this.collection);
+            console.log(this);
 
         },
 

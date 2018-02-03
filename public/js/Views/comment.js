@@ -3,7 +3,7 @@ define(function (require) {
         _ = require('underscore'),
         Backbone = require('backbone');
 
-    var PersonView = Backbone.View.extend({
+    var CommentView = Backbone.View.extend({
         tagName: 'li',
 
         template: "#comments_t",
@@ -20,7 +20,8 @@ define(function (require) {
         }
     });
 
-    return PersonView;
+
+    return CommentView;
 
 })
 
