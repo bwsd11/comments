@@ -12,12 +12,16 @@ define(function (require) {
         initialize: function () {
             var commentsCollections = new CommentsCollection();
 
-            commentsCollections.fetch();
+            commentsCollections.fetch({
+                success: function (res) {
+                    var commentform = new CommentFormView({collection: commentsCollections});
 
-            var commentform = new CommentFormView({collection: commentsCollections});
+                    var commentsView = new Commentsview({collection: commentsCollections});
+                    $("#comments .comments").append(commentsView.render().el);
+                }
+            });
 
-            var commentsView = new Commentsview({collection: commentsCollections});
-            $("#comments .comments").append(commentsView.render().el);
+
 
             // commentsCollections.on('add', commentsCollections.save());
 
@@ -27,12 +31,9 @@ define(function (require) {
         start: function () {
 
 
-
         }
 
     });
-
-
 
 
     return CommentsController;
