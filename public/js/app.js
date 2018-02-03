@@ -5,6 +5,7 @@ requirejs.config({
         backbone: 'backbone',
         underscore: 'underscore',
         collections: '../Collections',
+        controllers: '../Controllers',
         models: '../Models',
         views: '../Views'
     },
@@ -20,25 +21,18 @@ requirejs.config({
 });
 
 
-require(["jquery", "collections/CommentCollection", "models/comment", "views/CommentsView", "backbone"],
-    function ($, CommentCollection, modelcomment, commentsview, backbone) {
-    $(document).ready(function () {
+require(["controllers/CommentsController"],
+    function (CommentsController) {
 
+    CommentsController.start();
 
-        var commentcollection = new CommentCollection();
-        commentcollection.fetch();
-
-
-
-        console.log(CommentCollection);
-
-
-
-
-
-        var commentsView = new commentsview({collection: commentcollection});
-        $("#comments .comments").append(commentsView.render().el);
+        // var commentcollection = new CommentCollection();
+        // commentcollection.fetch();
+        //
+        // console.log(CommentCollection);
+        //
+        // var commentsView = new commentsview({collection: commentcollection});
+        // $("#comments .comments").append(commentsView.render().el);
 
 
     });
-});

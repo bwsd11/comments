@@ -1,25 +1,3 @@
-requirejs.config({
-    baseUrl: "/js/lib",
-    paths: {
-        jquery: 'jquery-3.3.1.min',
-        backbone: 'backbone',
-        underscore: 'underscore',
-        appControllers: '../Controllers',
-        appModels: '../Models',
-        appViews: '../Views'
-    },
-    shim: {
-        'underscore': {
-            exports: '_'
-        },
-        'backbone': {
-            deps: ['underscore', 'jquery'],
-            exports: 'Backbone'
-        }
-    }
-});
-
-
 define(function (require) {
     var $ = require('jquery'),
         _ = require('underscore'),
@@ -35,8 +13,8 @@ define(function (require) {
         },
 
         render: function () {
-            var template = _.template( $(this.template).html() );
-            this.$el.html(template( this.model.toJSON() ));
+            var template = _.template($(this.template).html());
+            this.$el.html(template(this.model.toJSON()));
 
             return this;
         }
