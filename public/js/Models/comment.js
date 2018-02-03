@@ -10,6 +10,7 @@ define(function(require) {
             title: 'web',
             text: 'i\'m a web developer'
         },
+        url: '/comments'
     });
 
     return Comment;

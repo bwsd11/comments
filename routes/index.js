@@ -67,41 +67,51 @@ router.get('/:id', function (req, res) {
 })
 
 
-router.post('/add', function (req, res) {
+router.post('/comments', function (req, res) {
     var comment = {
         date: moment().format(),
         name: req.body.name,
         title: req.body.title,
-        text: req.body.comment
+        text: req.body.text
     }
 
+    console.log(comment);
 
-    console.log(conform.validate(comment, {
+
+    var validate = conform.validate(comment, {
         properties: {
             name: {
-                type: 'string',
-                required: true,
-                minLength: 10,
-                pattern: /^[a-z]+$/,
-                messages: {
-                    type: 'Должны быть только буквы',
-                    required: 'Имя - обязательное поле',
-                    minLength: 'Минимальное количество символов - 10',
-                    pattern: 'Должны быть только английские символы',
-
-
-                }
+                pattern: /^[a-z]{4,}$/,
+                message: 'не меньше 4х английских букв'
             }
+            // title: {
+            //     pattern: /^[а-я]{4,}$/,
+            //     message: 'не меньше 4х русских букв'
+            // },
+            // text: {
+            //     pattern: /^[a-z]{4,}$/,
+            //     message: 'не меньше 4х английских букв'
+            // }
 
         }
-    }))
+    })
 
 
-    // db.collection('comments1').insert(comment, function (err, res) {
-    //     if (err)
-    //         console.log(err);
-    //
-    // })
+    console.log(validate);
+
+    if(!validate.valid)
+        res.send(validate);
+
+
+    if (validate.valid)
+
+        db.collection('comments').insert(comment, function (err, response) {
+            if (err)
+                console.log(err);
+
+            res.send(validate);
+
+        })
     // db.collection('comments').find().toArray(function (err, docs) {
     //     if (err)
     //         console.log(err);
