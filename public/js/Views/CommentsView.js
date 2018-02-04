@@ -2,6 +2,7 @@ define(function (require) {
     var $ = require('jquery'),
         _ = require('underscore'),
         Backbone = require('backbone'),
+        moment = require('moment'),
         Commentview = require('views/comment');
 
     var CommentsView = Backbone.View.extend({
@@ -16,6 +17,18 @@ define(function (require) {
         },
 
         addOne: function (model) {
+
+            var date = model.get('date');
+
+            console.log(model);
+            require(['moment/locale/ru'], function (localeModule) {
+
+                date = moment(date).fromNow();
+
+            });
+
+            model.set({date: date}, {wait: true});
+
 
             var commentView = new Commentview({model: model});
             this.$el.append(commentView.render().el);
@@ -42,7 +55,7 @@ define(function (require) {
             } else {
                 $(".errors").html('');
                 data.errors.forEach(function (elem) {
-                    $(".errors").append('<p>'+elem.message+'</p>');
+                    $(".errors").append('<p>' + elem.message + '</p>');
                 })
             }
         }

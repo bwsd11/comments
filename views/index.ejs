@@ -5,82 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
-
-
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script src="/js/moment.js"></script>
-    <script src="/js/js.js"></script>
     <title>Document</title>
 </head>
 <body>
-
-
-
-
-<div id="comments" class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <% if(title) { %>
-
-            <h1><%= title %></h1>
-
-            <% } %>
-
-            <% if(comments){ %>
-
-            <ul>
-                <% for(var i = 0; i < comments.length; i++) { %>
-                <li>
-                    <p class="date"><%=comments[i].date %></p>
-
-                    <p class="title">Имя:</p>
-                    <p><%= comments[i].name %></p>
-
-                    <p class="title">Тема:</p>
-                    <p><%= comments[i].title %></p>
-
-                    <p class="title">Комментарий</p>
-                    <p><%= comments[i].text %></p>
-                </li>
-                <% } %>
-
-            </ul>
-
-            <% } %>
-
-            <a class="addcomment" onclick="addComment(this)">Добавить новый комментарий</a>
-
-            <form id="send" class="form-horizontal" method="post" action="/add">
-                <div class="control-group">
-                    <label for="name">Ваше имя:</label>
-                    <input type="text" name="name" id="name">
-                </div>
-
-                <div class="control-group">
-                    <label for="title">Тема:</label>
-                    <input type="text" name="title" id="title">
-                </div>
-
-                <div class="control-group">
-                    <label for="comment">Комментарий</label>
-                    <input type="text" name="comment" id="comment">
-                </div>
-
-
-                <input class="btn btn-primary" type="submit">
-            </form>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
 
 </body>
 </html>

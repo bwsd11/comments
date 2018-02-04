@@ -2,32 +2,24 @@ define(function (require) {
     var $ = require('jquery'),
         underscore = require('underscore'),
         comment = require('models/comment'),
-        backbone = require('backbone'),
-        Commentview = require('views/comment'),
-        Commentsview = require('views/CommentsView');
+        moment = require('moment'),
+        Backbone = require('backbone');
 
 
     var CommentForm = Backbone.View.extend({
         el: '#send',
-        elCom: 'ul',
 
         initialize: function () {
-
-            console.log(this);
-
 
             var self = this;
 
             var Comment = new comment();
             this.model = Comment;
 
-            // this.collection.on('add', this.addOne(Comment), this);
-
-
 
             this.name = $('#name');
             this.title = $('#title');
-            this.text = $('#comment');
+            this.text = $('#text');
 
 
             this.name.change(function (e) {
@@ -65,20 +57,12 @@ define(function (require) {
             return this;
         },
 
-        events: {
-            // "submit": "submit"
-        },
-
-        addOne: function (model) {
-
-
-        },
 
         submit: function () {
-            // e.preventDefault();
-
             var self = this;
 
+            var current_time = moment().format();
+            this.model.set({date: current_time});
 
             this.model.save(null, {
                 success: function (model, res, op) {
@@ -94,23 +78,22 @@ define(function (require) {
 
         validate: function (model, data) {
 
-            var $ell = $(this.el);
-            var id_form = $ell.attr('id');
+
+            var $el = $(this.el);
+            var id_form = $el.attr('id');
 
             $('#' + id_form + " .error").html('');
 
-            // console.log($ell);
             console.log(data);
 
             if (data.valid) {
 
                 this.collection.add(model);
 
-
             } else {
 
                 data.errors.forEach(function (elem) {
-                    var error_block = $ell.find('#' + elem.property + ' + .error');
+                    var error_block = $el.find('#' + elem.property + ' + .error');
                     error_block.append('<p>' + elem.message + '</p>');
                 })
             }

@@ -8,7 +8,8 @@ define(function(require) {
         defaults: {
             name: 'Dima',
             title: 'web',
-            text: 'i\'m a web developer'
+            text: 'i\'m a web developer',
+            date: ''
         },
         url: '/comments'
     });

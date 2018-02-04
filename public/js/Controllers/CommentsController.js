@@ -2,14 +2,27 @@ define(function (require) {
     var $ = require('jquery'),
         _ = require('underscore'),
         Backbone = require('backbone'),
+        moment = require('moment'),
         Commentsview = require('views/CommentsView'),
         CommentsCollection = require('collections/CommentCollection'),
         CommentFormView = require('views/commentform');
 
 
+
+
     var CommentsController = Backbone.Router.extend({
 
+
         initialize: function () {
+
+            require(['moment/locale/ru'], function (localeModule) {
+                console.log(moment().fromNow());
+            });
+
+
+
+
+
             var commentsCollections = new CommentsCollection();
 
             commentsCollections.fetch({
@@ -20,11 +33,6 @@ define(function (require) {
                     $("#comments .comments").append(commentsView.render().el);
                 }
             });
-
-
-
-            // commentsCollections.on('add', commentsCollections.save());
-
 
         },
 

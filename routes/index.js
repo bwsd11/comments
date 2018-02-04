@@ -17,29 +17,30 @@ var objectId = require('mongodb').ObjectId;
 var title = 'Комментарии';
 
 
-var com = [
-    {
-        name: 'sdmwasdfsdfdf',
-        title: 'subject',
-        text: 'комментарий comment'
-    }]
 
+
+router.get('/', function (req, res) {
+    res.send('asd');
+})
 
 router.get('/comments', function (req, res) {
 
-    console.log('234534252435234523453245345');
+
 
     db.collection('comments').find().toArray(function (err, docs) {
         if (err)
             console.log(err);
 
         console.log(docs);
-        moment.lang('ru');
+        moment.locale('ru');
 
 
         docs.forEach(function (v) {
-            v.date = moment(v.date).startOf('hour').fromNow();
+            v.date = moment(v.date).fromNow();
         })
+
+        console.log('sdfasdfasdfasdfasdfasdfasdf');
+        console.log(docs);
 
 
         res.send(docs);
@@ -69,13 +70,13 @@ router.get('/:id', function (req, res) {
 
 router.post('/comments', function (req, res) {
     var comment = {
-        date: moment().format(),
+        date: req.body.date,
         name: req.body.name,
         title: req.body.title,
         text: req.body.text
     }
 
-    console.log(comment);
+    console.log(req.body);
 
 
     var validate = conform.validate(comment, {
