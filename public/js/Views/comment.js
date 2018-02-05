@@ -7,6 +7,7 @@ define(function (require) {
         tagName: 'li',
         url: '/comment',
         template: "#comments_t",
+        // template: _.template('<p class="date"><%=date%></p><p class="title">Имя:</p><p><%= name %></p><p class="title">Тема:</p><p><%= title %></p><p class="title">Комментарий</p><p><%= text %></p>'),
 
         initialize: function () {
             this.render();

@@ -20,7 +20,8 @@ var title = 'Комментарии';
 
 
 router.get('/', function (req, res) {
-    res.send('asd');
+    res.render('index', { title: 'ejs'});
+
 })
 
 router.get('/comments', function (req, res) {
