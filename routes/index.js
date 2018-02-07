@@ -20,7 +20,12 @@ var title = 'Комментарии';
 
 
 router.get('/', function (req, res) {
-    res.render('index', { title: 'ejs'});
+    var obj = [{
+        name: 'name',
+        title: 'title',
+        comment: 'comment'
+    }];
+    res.render('index', { title: 'ejs', comm: obj});
 
 })
 
