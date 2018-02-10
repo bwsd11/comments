@@ -41,38 +41,37 @@
 
 
 
-            <div class="bg-danger errors"></div>
 
             <a class="addcomment">Добавить новый комментарий</a>
 
-            <form id="send" class="form-horizontal" method="post" action="/add">
-                <div class="control-group">
-                    <label for="name">Ваше имя:</label>
-                    <input type="text" name="name" id="name">
-                    <div class="error bg-danger"></div>
-                </div>
 
-                <div class="control-group">
-                    <label for="title">Тема:</label>
-                    <input type="text" name="title" id="title">
-                    <div class="error bg-danger"></div>
-                </div>
-
-                <div class="control-group">
-                    <label for="text">Комментарий</label>
-                    <input type="text" name="text" id="text">
-                    <div class="error bg-danger"></div>
-                </div>
-
-
-                <input class="btn btn-primary" type="submit">
-            </form>
         </div>
     </div>
 </div>
 
 
+<form id="send" class="form-horizontal" method="post" action="/add">
+    <div class="control-group">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name">
+        <div class="error bg-danger"></div>
+    </div>
 
+    <div class="control-group">
+        <label for="title">Тема:</label>
+        <input type="text" name="title" id="title">
+        <div class="error bg-danger"></div>
+    </div>
+
+    <div class="control-group">
+        <label for="text">Комментарий</label>
+        <input type="text" name="text" id="text">
+        <div class="error bg-danger"></div>
+    </div>
+
+
+    <input class="btn btn-primary" type="submit">
+</form>
 
 
 

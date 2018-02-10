@@ -4,7 +4,6 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var MongoClient    = require('mongodb').MongoClient;
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -14,14 +13,10 @@ var users = require('./routes/users');
 
 var app = express();
 
-// view engine setup
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-var ejs = require('ejs');
-ejs.open = '{{';
-ejs.close = '}}';
+
 
 app.use(favicon());
 app.use(logger('dev'));
@@ -37,7 +32,7 @@ app.use('/users', users);
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
-    next(err);
+    // next(err);
 });
 
 /// error handlers

@@ -3,12 +3,51 @@ html
     head
     meta(charset = 'utf-8')
     meta(name='viewport', content="initial-scale=1.0, width=device-width")
-    title Comments
+    link(rel='stylesheet',href='/css/style.css')
+    link(href='//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'
+    ,rel="stylesheet")
+    script(src='/js/lib/require.js', data-main='/js/app.js')
+    title #{title}
     body
-        h1.asds#asd test pasdfug #{title}
 
-        for comment in comm
-            div.asd
-                p= comment.name
-                p= comment.title
-                p= comment.comment
+        script#comments_t(type='text/template').
+            <p class="date"><%= date%></p>
+
+            <p class="title">Имя:</p>
+            <p><%= name %></p>
+
+            <p class="title">Тема:</p>
+            <p><%= title %></p>
+
+            <p class="title">Комментарий</p>
+            <p><%= text %></p>
+
+
+        #comments.container
+            .row
+                .col-md-12.col-xs-12.col-sm-12
+                    h1 #{title}
+
+                    .comments
+
+
+                    a.addcomment Добавить новый комментарий
+
+                    form#send.form-horizontal
+                        .control-group
+                            label(for=name) Ваше имя
+                            input(type='text', name='name', id='name')
+                            div.error.bg-danger
+
+                        .control-group
+                            label(for=title) Тема
+                            input(type='text', name='title', id='title')
+                            div.error.bg-danger
+                        .control-group
+                            label(for=text) Комментарий
+                            input(type='text', name='text', id='text')
+                            div.error.bg-danger
+
+                        input.btn.btn-primary(type='submit', value='Отправить')
+
+

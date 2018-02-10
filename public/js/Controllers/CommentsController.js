@@ -16,12 +16,7 @@ define(function (require) {
         initialize: function () {
 
             require(['moment/locale/ru'], function (localeModule) {
-                console.log(moment().fromNow());
             });
-
-
-
-
 
             var commentsCollections = new CommentsCollection();
 

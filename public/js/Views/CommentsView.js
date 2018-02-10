@@ -10,29 +10,20 @@ define(function (require) {
         self: this,
 
         initialize: function () {
-            console.log(this);
-
             this.collection.on('add', this.addOne, this);
-
         },
 
         addOne: function (model) {
 
+            var self = this;
             var date = model.get('date');
 
-            console.log(model);
             require(['moment/locale/ru'], function (localeModule) {
-
                 date = moment(date).fromNow();
-
+                model.set({date: date}, {wait: true});
+                var commentView = new Commentview({model: model});
+                self.$el.append(commentView.render().el);
             });
-
-            model.set({date: date}, {wait: true});
-
-
-            var commentView = new Commentview({model: model});
-            this.$el.append(commentView.render().el);
-
         },
 
         render: function () {

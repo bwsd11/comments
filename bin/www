@@ -2,12 +2,6 @@
 var debug = require('debug')('my-application');
 var app = require('../app');
 
-var db = require('../config/db');
-
-var mongoose = require('mongoose');
-
-mongoose.connect(db.url);
-var db = mongoose.connection;
 
 app.set('port', process.env.PORT || 3000);
 

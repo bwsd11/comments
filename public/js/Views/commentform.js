@@ -17,26 +17,30 @@ define(function (require) {
             this.model = Comment;
 
 
-            this.name = $('#name');
-            this.title = $('#title');
-            this.text = $('#text');
 
-
-            this.name.change(function (e) {
-                Comment.set({name: $(e.currentTarget).val()});
-            });
-
-            this.title.change(function (e) {
-                Comment.set({title: $(e.currentTarget).val()});
-            });
-
-            this.text.change(function (e) {
-                Comment.set({text: $(e.currentTarget).val()});
-            });
 
             $(this.el).on('submit', function (e) {
                 e.preventDefault();
-                self.submit();
+
+
+
+
+                Comment.set({name: $(self.el).find('#name').val()});
+                Comment.set({title: $(self.el).find('#title').val()});
+                Comment.set({text: $(self.el).find('#text').val()});
+
+                var current_time = moment().format();
+                Comment.set({date: current_time});
+
+                self.model.save(null, {
+                    success: function (model, res, op) {
+                        self.validate(model, res);
+                    },
+                    error: function (model, xhr, op) {
+                        console.log(xhr);
+                    }
+                });
+
             });
 
             $('.addcomment').click(function () {
@@ -58,38 +62,21 @@ define(function (require) {
         },
 
 
-        submit: function () {
-            var self = this;
-
-            var current_time = moment().format();
-            this.model.set({date: current_time});
-
-            this.model.save(null, {
-                success: function (model, res, op) {
-                    self.validate(model, res);
-                },
-                error: function (model, xhr, op) {
-                    console.log(xhr);
-                }
-            });
-
-
-        },
 
         validate: function (model, data) {
 
 
             var $el = $(this.el);
             var id_form = $el.attr('id');
+            var self = this;
 
             $('#' + id_form + " .error").html('');
 
-            console.log(data);
 
             if (data.valid) {
-
                 this.collection.add(model);
-
+                $($el).remove();
+                $('.addcomment').remove();
             } else {
 
                 data.errors.forEach(function (elem) {
